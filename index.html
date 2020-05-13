@@ -56,6 +56,7 @@
 
         .title {
             color: #204456;
+            text-transform: capitalize;
             font-size: 30px;
             font-weight: 600;
             line-height: 36px;
@@ -74,6 +75,7 @@
             font-size: 15px;
             font-weight: 800;
             padding-top: 20px;
+            text-transform: capitalize;
         }
 
         .advantages-td p,
@@ -97,14 +99,18 @@
             flex-direction: row !important;
             justify-content: center;
         }
-        .social-hd a{
+
+        .social-hd a {
             padding-right: 10px;
             padding-top: 10px;
             padding-bottom: 10px;
         }
+
         .social-ft a {
-            padding-right: 40px;
+            padding-right: 20px;
+            padding-left: 20px;
         }
+
         .address {
             padding-left: 30px;
         }
@@ -112,11 +118,13 @@
         .about {
             padding-right: 30px;
         }
-        .footer-menu{
-           padding-top: 70px; 
-           padding-bottom: 40px;
+
+        .footer-menu {
+            padding-top: 70px;
+            padding-bottom: 40px;
         }
-        .footer-menu a{
+
+        .footer-menu a {
             text-decoration: none;
             color: #000000;
             font-size: 12px;
@@ -125,8 +133,104 @@
             padding-right: 15px;
             padding-left: 10px;
         }
-        .border-ft{
-            border-right: 1px solid  #000000;
+
+        .border-ft {
+            border-right: 1px solid #000000;
+        }
+
+        @media (max-width: 720px) {
+            .table-700 {
+                width: 560px !important;
+            }
+
+            .table-610 {
+                width: 450px !important;
+            }
+
+            .advantages-td td {
+                display: block !important;
+                margin: 0 auto !important;
+                margin-bottom: 50px !important;
+                padding-right: 0 !important;
+            }
+
+            .title {
+                font-size: 22px;
+            }
+
+            .clothes td {
+                display: block !important;
+                margin: 0 auto !important;
+                margin-bottom: 50px !important;
+                margin-top: 50px !important;
+            }
+
+            .social-ft a {
+                padding-top: 20px !important;
+            }
+
+            .footer-td td {
+                display: block !important;
+                margin: 0 auto !important;
+                text-align: left !important;
+                padding-left: 30px !important;
+            }
+
+            .address {
+                padding-left: 0 !important;
+            }
+        }
+
+        @media (max-width: 630px) {
+            .table-700 {
+                width: 400px !important;
+            }
+
+            .table-610 {
+                width: 320px !important;
+            }
+
+            img {
+                height: 60% !important;
+                margin: 0 auto !important;
+            }
+            .qr img{
+                display: none !important;
+            }
+            .footer-menu {
+                text-align: left !important;
+                /* margin-left: 10px !important;
+                margin-right: 10px !important; */
+                padding-top: 20px !important;
+                padding-bottom: 30px !important;
+            }
+
+            .footer-menu a {
+                display: block !important;
+                margin: 0 auto !important;
+            }
+            .footer-menu{
+                padding-left: 20px !important;
+            }
+            .border-ft {
+                border: none !important;
+            }
+            .border-ft a{
+                margin: 0 !important;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .browser{
+                text-align: center;
+            }
+            .table-700 {
+                width: 300px !important;
+            }
+
+            .table-610 {
+                width: 260px !important;
+            }
         }
     </style>
 </head>
@@ -184,7 +288,7 @@
                                 <tr>
                                     <td class="title" style="font-family: Arial, Helvetica, sans-serif, 'Open Sans';"
                                         align="center">
-                                        Great Newsletter Template To Have!
+                                        best stock options to buy today!
                                     </td>
                                 </tr>
                             </table>
@@ -194,23 +298,24 @@
                         <td class="advantages-td" bgcolor="#ffffff">
                             <table class="main table-610" cellpadding="0" cellspacing="0" width="610" align="center">
                                 <tr>
-                                    <td style="font-family: Arial, Helvetica, sans-serif, 'Open Sans';" width="200"
-                                        align="center">
+                                    <td style="font-family: Arial, Helvetica, sans-serif, 'Open Sans';padding-right: 20px;"
+                                        width="200" align="center">
                                         <img src="images/delivery.png" alt="truck">
                                         <h3>Worldwide Delivery</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                                        <p>Free worldwide delivery to 190 countries.</p>
                                     </td>
-                                    <td style="font-family: Arial, Helvetica, sans-serif, 'Open Sans';" width="200"
-                                        align="center">
+                                    <td style="font-family: Arial, Helvetica, sans-serif, 'Open Sans';padding-right: 20px;"
+                                        width="200" align="center">
                                         <img src="images/money.png" alt="money">
-                                        <h3>money back guarantee</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                                        <h3>Money Back Guarantee</h3>
+                                        <p>We will refund 100% of the funds if you are not satisfied.</p>
                                     </td>
                                     <td style="font-family: Arial, Helvetica, sans-serif, 'Open Sans';" width="200"
                                         align="center">
                                         <img src="images/phone.png" alt="phone">
-                                        <h3>24/7 service</h3>
-                                        <p>Lorem ipsum dolor sit amet, consectetuer</p>
+                                        <h3>24/7 Service</h3>
+                                        <p>We are available 365 days 24/7.
+                                            Don’t hesitate to call us.</p>
                                     </td>
                                 </tr>
                             </table>
@@ -228,7 +333,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="clothes">
+                        <td class="clothes" bgcolor="#ffffff">
                             <table class="table-700" cellpadding="0" cellspacing="0" width="700" align="center">
                                 <tr>
                                     <td>
@@ -295,20 +400,22 @@
                         </td>
                     </tr>
                     <tr>
-                        <td>
+                        <td class="footer-td">
                             <table class="table-700" cellpadding="0" cellspacing="0" width="700" bgcolor="#ffffff"
                                 align="center">
                                 <tr>
                                     <td class="address" style="font-family: Arial, Helvetica, sans-serif, 'Open Sans';"
                                         align="left">
-                                        <h3>F-life website</h3>
-                                        <p>123/A, AnyRoad, Anycity, Anystate, Country <br />
-                                            Phone: +12345 67 89 01</p>
+                                        <h3>F-life Sports</h3>
+                                        <p>Refshalevej 163A, 1432 København, Denmark <br />
+                                            Phone: +45-123-456-879</p>
                                     </td>
                                     <td class="about" style="font-family: Arial, Helvetica, sans-serif, 'Open Sans';"
                                         align="right">
-                                        <h3>Lorem epsum dolor set</h3>
-                                        <p>amet quen de seun. Anen de lorem <br /> epsum na kono text na chata matha</p>
+                                        <h3>Run, Gym, Hike...</h3>
+                                        <p>It doesn’t matter whether you’re an elite runner, <br /> weekend fell walker
+                                            or gym enthusiast, that commitment <br /> and passion to be active is what
+                                            drives us both.</p>
                                     </td>
                                 </tr>
                             </table>
@@ -320,11 +427,11 @@
                                 align="center">
                                 <tr>
                                     <td class="footer-menu" align="center">
-                                        <a href="#"
-                                            style="font-family: Arial, Helvetica, sans-serif, 'Open Sans';" class="border-ft">Terms &
+                                        <a href="#" style="font-family: Arial, Helvetica, sans-serif, 'Open Sans';"
+                                            class="border-ft">Terms &
                                             Condition</a>
-                                        <a href="#"
-                                            style="font-family: Arial, Helvetica, sans-serif, 'Open Sans';" class="border-ft">Privecy
+                                        <a href="#" style="font-family: Arial, Helvetica, sans-serif, 'Open Sans';"
+                                            class="border-ft">Privecy
                                             Policy</a>
                                         <a href="#"
                                             style="font-family: Arial, Helvetica, sans-serif, 'Open Sans';">Unsubscribe</a>
